@@ -1,0 +1,11 @@
+clear trafficserver
+/vdncloud/xdn_cache/bin/traffic_server  -Cclear
+
+show trafficserver status
+/vdncloud/xdn_cache/bin/traffic_top
+
+relaod trafficserver
+/vdncloud/xdn_cache/bin/traffic_ctl config   reload
+
+find records.config config 
+/vdncloud/xdn_cache/bin/traffic_ctl config get proxy.config.http.negative_caching_lifetime  
