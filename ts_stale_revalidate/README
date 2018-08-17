@@ -1,0 +1,8 @@
+add   rule :
+curl   -Lvo /dev/null  "http://ts.stale.revalidate.com/rule_dir_add?http://example.com/dir/"
+
+cancel rule:
+curl   -Lvo /dev/null  "http://ts.stale.revalidate.com/rule_dir_cancel?http://example.com/dir/"
+
+rule info:
+ curl   -Lvo /dev/null  "http://ts.stale.revalidate.com/rule_dir_info"
