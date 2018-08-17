@@ -1,3 +1,8 @@
+add plugin to file : cache_dir/etc/trafficserver/plugin.config
+
+rule_urls : cache_dir/var/stale_revalidate/rule_url
+
+
 add   rule :
 curl   -Lvo /dev/null  "http://ts.stale.revalidate.com/rule_dir_add?http://example.com/dir/"
 
